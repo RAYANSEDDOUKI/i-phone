@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>i phone</title>
+      <link rel="shortcut icon" href="abdelrahman gamal/abdelrahman gamal/logo.png">
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <div class="container">
+            <header>
+                  <a href="#"><img src="abdelrahman gamal/abdelrahman gamal/logo.png" class="logo"></a>
+                  <ul>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">projict</a></li>
+                        <li><a href="#">acontact</a></li>
+                  </ul>
+            </header>
+            <section class="content">
+                  <div class="text">
+                        <h2>i phone 13 pro max</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Deserunt, odit sequi omnis doloremque cumque culpa ex hic voluptatum ducimus ipsam. Cupiditate
+                        asperiores assumenda quos. Animi sequi nihil deserunt tenetur sit.
+                        </p>
+                        <a href="#">all product</a>
+                  </div>
+                  <div class="imgs">
+                        <img src="abdelrahman gamal/abdelrahman gamal/0.png" class="a"/>
+
+                  </div>
+            </section>
+            <div class="icon">
+                  <img src="abdelrahman gamal/abdelrahman gamal/0.png" onclick="chong(this.src); chongC('#4b5465')"  alt="">
+                  <img src="abdelrahman gamal/abdelrahman gamal/1.png" onclick="chong(this.src); chongC('#247ec8')" alt="">
+                  <img src="abdelrahman gamal/abdelrahman gamal/3.png" onclick="chong(this.src); chongC('#1e1e1e')" alt="">
+                  <img src="abdelrahman gamal/abdelrahman gamal/4.png" onclick="chong(this.src); chongC('#c79b53')" alt="">
+                  <img src="abdelrahman gamal/abdelrahman gamal/5.png" onclick="chong(this.src); chongC('rgb(73 0 0)')" alt="">
+            </div>
+      </div>
+</body>
+<script src="https://unpkg.com/scrollreveal"></script> 
+<script>
+      let img = document.querySelector(".a")
+      let container = document.querySelector(".container")
+
+      function chong(im){
+            img.src = im;
+      }
+      function chongC(dh){
+            container.style.backgroundColor = dh
+      }
+      const scrollrevealOp = {
+            distance:"50px",
+            origin:"bottom",
+            duration:1000,
+      };
+      ScrollReveal().reveal(".container header",{
+            ...scrollrevealOp,
+      })
+      ScrollReveal().reveal(".container .content h2",{
+            ...scrollrevealOp,
+            delay:500,
+      })
+      
+            ScrollReveal().reveal(".container .content p",{
+                  ...scrollrevealOp,
+                  delay:700,
+            })
+            ScrollReveal().reveal(".container .content a",{
+                  ...scrollrevealOp,
+                  delay:900,
+            })
+            ScrollReveal().reveal(".container .content a",{
+                  ...scrollrevealOp,
+                  delay:1200,
+            })
+            ScrollReveal().reveal(".container .icon",{
+                  ...scrollrevealOp,
+                  delay:1500,
+            })
+</script>
+</html>
